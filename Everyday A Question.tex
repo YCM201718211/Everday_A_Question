@@ -1,0 +1,298 @@
+\documentclass[UTF8,a4paper]{ctexart}
+\input{setting/导言区}
+\begin{document}
+\pagestyle{NoHeader}%此页无页眉
+\setstretch{1.8}%1.5倍行距:1.5*1.2=1.8(行距是字号的1.8倍,行距是基本行距的1.5倍)
+\zihao{-5}\songti%正文字体格式
+\setlength{\parindent}{2em}%首行缩进2字符
+\begin{example}[太原理工大学,2023]
+	求极限$\lim\limits_{n\to\infty}\left(1+\frac{1}{n^2}\right)\left(1+\frac{2}{n^2}\right)\dotsm\left(1+\frac{n}{n^2}\right)$.
+	\end{example}
+\begin{example}[北京科技大学,2023]
+	计算极限$\lim\limits_{n\to\infty}\left(\frac{1}{\sqrt{n^2+1}}+\frac{1}{\sqrt{n^2+2^2}}+\dotsb+\frac{1}{\sqrt{n^2+n^2}}\right)$.
+\end{example}
+\newpage
+\begin{thinking}[西北大学,2023]
+	求极限$\lim\limits_{n\to\infty}\frac{\sqrt[n]{(n+1)(n+2)\dotsm(n+n)}}{n}$.
+\end{thinking}
+\begin{thinking}[南京大学,2023]
+	求极限$\lim\limits_{n\to\infty}\left(\frac{5^{\frac{1}{n}}}{n+1}+\frac{5^{\frac{2}{n}}}{n+\frac{1}{2}}+\cdots+\frac{5^{\frac{n}{n}}}{n+\frac{1}{n}}\right)$.
+\end{thinking}
+\newpage
+\begin{example}[华东师范大学,2023]
+	设数列$\{a_n\}$满足$(2-a_n)a_{n+1}=1$.证明:
+	\begin{enumerate}
+		\item 存在正整数$k$,使得$a_k\leq1$;
+		\item 数列$\{a_n\}$极限存在,并求出该极限的值;
+		\item 若$\{a_1\ne1\}$,则$a_n(n=1,2,\cdots)$两两不相等；
+		\item 满足题设条件并且$a_1\neq1$数列${\{a_n\}}$存在.
+	\end{enumerate}
+\end{example}
+\newpage
+\begin{thinking}[福州大学,2023]
+设$a_1>0$,且$a_{n+1}=\frac{3(1+a_n)}{3+a_n}(n=1,2,\cdots)$,证数列$\{a_n\}$收敛,并求出极限.
+\end{thinking}
+\begin{thinking}[南京航空航天大学,2023]
+	设$a_1=1,a_2=2,a_{n+1}=3a_n-a_{n-1}(n=2,3,\cdots)$,记$x_n=\frac{1}{a_n}$,证明$\{x_n\}$收敛,并求$\lim\limits_{n\to\infty}x_n$,判断级数$\sum\limits_{n=1}^{\infty}x_n$的收敛性.
+\end{thinking}
+\newpage
+\begin{example}[西安交通大学,2023]
+	已知数列$\{x_n\}$满足$x_1=0,x_{n+1}=\cos x_n(n=1,2,\cdots)$,证明:
+	\begin{enumerate}
+	\item $\{x_{2n}\},\{x_{2n-1}\}$均单调;
+	\item $\{x_n\}$收敛.
+		\end{enumerate}
+	\end{example}
+\begin{example}[暨南大学,2023]
+	设$f_n(x)=\cos x+\cos^2 x+\dotsb+\cos^n x$,证明:对任意的正整数$n$,$f_n(x)=1$在$\left[0,\frac{\pi}{3}\right)$内有且仅有一个根$x_n$,进一步证明$\lim\limits_{n\to\infty}x_n$存在,且为$\frac{\pi}{3}$.
+\end{example}
+\newpage
+\begin{thinking}[中国科学院大学,2023]
+	证明:数列$a_n=1+\frac{1}{2}+\dotsb+\frac{1}{n}-\ln n$收敛.
+\end{thinking}
+\begin{thinking}[北京邮电大学,2023]
+	已知$f_n(x)=x^n+x(n=1,2,\cdots)$.
+	\begin{enumerate}
+		\item 证明:方程$f_n(x)=1$在$\left[\frac{1}{2},1\right]$上有且仅有一个解$x_n$.
+		\item 证明:$\{x_n\}$极限存在,并求$\lim\limits_{n\to\infty}x_n$.
+	\end{enumerate}
+\end{thinking}
+\newpage
+\begin{example}[西南交通大学,2023]
+	若$\lim\limits_{n\to\infty}a_n=a$.证明:$\lim\lim\limits_{n\to\infty}\frac{a_1+a_2+\dotsb+a_n}{n}=a$.
+\end{example}
+\begin{example}[长安大学,2023]
+	设$a_n>0,n\in\mathbb{N_+}$,且$\lim\limits_{n\to\infty}a_n=+\infty$,证明:$\lim\limits_{n\to\infty}\sqrt[n]{a_1a_2\dotsm a_n}=+\infty$.
+\end{example}
+\newpage
+\begin{thinking}[华南理工大学,2023]
+	已知$\lim\limits_{n\to\infty}\frac{a_1+a_2+\dotsb+a_n}{n}=a$(有限数),证明:$\lim\limits_{n\to\infty}\frac{a_n}{n}=0$.
+\end{thinking}
+\begin{thinking}[暨南大学,2023]
+	已知$\{a_n\}$满足$\lim\limits_{n\to\infty}a_n=a$,证明:$\lim\limits_{n\to\infty}\frac{a_1+2a_2+\dotsb+na_n}{1+2+\dotsb+n}=a$.
+\end{thinking}
+\newpage
+\begin{example}[吉林大学,2023]
+	求极限$\lim\limits_{n\to\infty}\frac{(1+\cos 1)^3+(2+\cos 2)^3+\cdots+(n+\cos n)^3}{n^4}$.
+\end{example}
+\begin{example}[电子科技大学,2023]
+	设函数$f\in C^2\left[0,1\right],f^{\prime}(0)=1,f^{\prime\prime}\left(0\right)\neq 0$且$0<f(x)<x,x\in (0,1)$,令
+	\begin{equation*}
+		a_1\in (0,1),a_{n+1}=f(a_n)(n=1,2,\dots).
+	\end{equation*}
+\begin{enumerate}
+	\item 证明:数列$\{a_n\}$收敛,并求$\lim\limits_{n\to\infty}a_n$;
+	\item 试问数列$\{na_n\}$是否一定收敛?若不一定收敛,请举出反例;若收敛,求其极限$\lim\limits_{n\to\infty}na_n$.
+\end{enumerate}
+\end{example}
+\newpage
+\begin{thinking}[上海财经大学,2023]
+	已知$x_0>1,x_n=x_{n-1}+\frac{1}{x_{n-1}}$,数列$\{\frac{x_n}{\sqrt{n}}\}$是否收敛?
+\end{thinking}
+\begin{thinking}[厦门大学,2023,南京师范大学,2023]
+	设$0<k<1$,且$\lim\limits_{n\to\infty}a_n=a$,证明:
+	\begin{equation*}
+		\lim\limits_{n\to\infty}\left(a_n+ka_{n-1}+\cdots+k^{n-1}a_1+k^na_0\right)=\frac{a}{1-k}.
+	\end{equation*}
+\end{thinking}
+\newpage
+\begin{example}[华南师范大学,2023]
+	求极限$\lim\limits_{x\to 0}\frac{(\tan x)^2(1-\cos x)^2}{x(\arcsin x)^3\left[\ln (1+x)\right]^2}$.
+\end{example}
+\begin{example}[新疆大学,2023]
+	求极限$\lim\limits_{x\to 0^+}\left(\sin x\right)^{\frac{1}{1+\ln x}}$.
+\end{example}
+\begin{example}[吉林大学,2023]
+	求极限$\lim\limits_{x\to 0}\frac{\int_{x^2}^{x}\left(\tan t\right)^3 \,\mathrm{d} t}{\ln \left(1+x^2\right)\left(e^{2x^2}-1\right)}$.
+\end{example}
+\begin{example}[太原理工大学,2023]
+	求极限$\lim\limits_{x\to 0}\frac{(1+x)^{\frac{1}{x}}-e}{\sqrt{1+x}-1}$.
+\end{example}
+\newpage
+\begin{thinking}[北京科技大学,2023]
+	求极限$\lim\limits_{x\to \infty}\left(\cos \frac1x\right)^{x^2}$.
+\end{thinking}
+\begin{thinking}[中科学技术大学,2023]
+	求极限$\lim\limits_{x\to 1}\frac{x^x-x}{\ln x-x+1}$.
+\end{thinking}
+\begin{thinking}[华东师范大学,2023]
+	求极限$\lim\limits_{x\to 0^+}\frac{\sqrt{1-e^{-x}}-\sqrt{1-\cos x}}{\sqrt{\sin x}}$.
+\end{thinking}
+\begin{thinking}[上海财经大学,2023]
+	求极限
+	$\lim\limits_{x\to 0}\frac{\left(1-\sqrt{\cos x}\right)\left(1-\sqrt[3]{\cos x}\right)\dotsm\left(1-\sqrt[n]{\cos x}\right)}{{\left(1-\cos x\right)}^{n-1}}$.
+\end{thinking}
+\newpage
+\begin{example}[陕西师范大学,2023;新疆大学,2023]
+	求极限$\lim\limits_{x\to 0}\frac{e^x-\left(1+2x\right)^{\frac12}}{\ln \left(1+x^2\right)}$.
+\end{example}
+\begin{example}[西北大学,2023]
+	求极限$\lim\limits_{x\to 0}\frac{(1+\sin^2 x)^{1902}-(\cos x)^{2022}}{\tan^2 x}$.
+\end{example}
+\begin{example}[华南师范大学,2023]
+	求极限
+	\begin{equation*}
+		\lim\limits_{n\to\infty}\left(A_1\sqrt{n+1}+A_2\sqrt{n+2}+\cdots+A_k\sqrt{n+k}\right).
+	\end{equation*}
+其中$A_1+A_2+\cdots+A_k=0$.
+\end{example}
+\newpage
+\begin{thinking}[四川大学,2023]
+	求极限$\lim\limits_{n\to\infty}\left (\frac{1}{\ln \left (n+1\right )-\ln n}-n\right )$.
+\end{thinking}
+\begin{thinking}[西南交通大学,2023]
+	求极限$\lim\limits_{x\to 0}\frac{1-\cos x\cos 2x\cos 3x}{1-\cos x}$.
+\end{thinking}
+\begin{thinking}[华中师范大学,2023]
+	求极限$\lim\limits_{x\to +\infty}\sqrt{x^3}\left (\sqrt{x+1}+\sqrt{x-1}-2\sqrt{x}\right )$.
+\end{thinking}
+\newpage
+\begin{example}[吉林大学,2023]
+	求极限$\lim\limits_{n\to\infty}n^2\left [\sin \left (\cos \frac1n\right )-\sin 1\right ]$.
+\end{example}
+\begin{example}[南开大学,2023]
+	求极限$\lim\limits_{x\to 0}\frac{\cos \left (\sin x\right )-e^{\cos x-1}}{\tan ^2x-\sin ^2x}$.
+\end{example}
+\newpage
+\begin{thinking}[长安大学,2023]
+	计算极限$ \lim\limits_{x\to 0}\dfrac{1-\left (\cos x\right )^{\sin x}}{x^3} $.
+\end{thinking}
+\begin{thinking}[南京师范大学,2023]
+求极限$ \lim\limits_{x\to 0}\left (e^x-\sin x\right )^{\frac{1}{x^2}} $.
+\end{thinking}
+\begin{thinking}[西南大学,2023]
+	求极限$ \lim\limits_{x\to 0}\frac{\sin \left (\sin x\right )+\sin 2x}{\tan x-3\arctan 2x} $.
+\end{thinking}
+\newpage
+\begin{example}[重庆大学,2023]
+	设函数$ f(x) $在$ x=0 $的某邻域内可导,且
+	\[
+	 \lim\limits_{x\to 0}\left (1+x+\frac{f(x)}{x}\right )^{\frac{1}{x}}=e^{3} .
+	 \]
+求$ f(0),f^{\prime}(0) $以及$ \lim\limits_{x\to 0}\left (1+\frac{f(x)}{x}\right )^{\frac1x} $.
+\end{example}
+\begin{example}[上海财经大学,2023]
+	求极限$ \lim\limits_{n\to\infty}n\sin \left (2\pi en!\right ) $.
+\end{example}
+\newpage
+\begin{thinking}[西安交通大学,2023]
+	设函数$ f(x) $在$ a $的邻域内有定义,在$ a $处可导且$ f(a) >0$,计算
+	\[
+	\lim\limits_{x\to a}\frac{f(x)^{f(x)}-f(a)^{f(x)}}{x-a}.
+	\]
+\end{thinking}
+\begin{thinking}[吉林大学,2023]
+	数列$ \{x_n\} $是方程$ x\cot x=\frac{\pi}{2}\cot x-10 $在$ \left (\frac{\pi}{2},+\infty\right ) $上的解序列,试证明
+	\[
+	\lim\limits_{n\to\infty}\left [x_n-\left (n-\frac12\right )\pi\right ]=0.
+	\]
+\end{thinking}
+\newpage
+\begin{example}[安徽大学,2023]
+	设$ f $为$ [a,b] $上的单调函数,且$ f(x) $可取到$ f(a) $与$ f(b) $之间的一切值,证明$ f(x) $为$ [a,b] $上的连续函数.
+\end{example}
+\begin{example}[电子科技大学,2023]
+	设函数$ g\in C[a,b] ,f$在$ g $的值域上有定义.证明:若$f\circ g\in C[a,b]$,则$ f $在$ g $的值域上连续.
+\end{example}
+\begin{example}[华南理工大学,2023]
+	设$ F(x) $在$ [0,1] $上有定义且有界,$ a,b$是大于$1$的常数,对$ 0\leq x\leq \frac{1}{a} $,有$ F(ax)=bF(x) $.证明:$ F(x) $在$ x=0 $处右连续.
+\end{example}
+\newpage
+\begin{thinking}[北京师范大学,2023]
+	已知$ f(x) $在$ [a,b] $上连续,证明:$ M(x)=\max\limits_{a\leq t\leq x} f(t)$在$ [a,b] $上也连续.
+\end{thinking}
+\begin{thinking}[北京师范大学,2023]
+	已知$ \lvert f(x)-f(y)\rvert\leq L\lvert x-y\rvert ,L\in \left (0,1\right )$.证明:存在唯一的$ x $,使得$ f(x) =x$.
+\end{thinking}
+\begin{thinking}[中国科学院大学,2023]
+	设函数$ f(x) $在$ [a,b] $上连续,且对任意的$ x\in [a,b] $,存在$ y\in [a,b] $,使得$ \vert f(y)\rvert\leq\dfrac12\lvert f(x)\rvert $,证明:存在$ \xi  \in [a,b]$,使得$ f(\xi) =0$.
+\end{thinking}
+\newpage
+\begin{example}[华中师范大学,2023]
+	设函数$ f $在有界区间$ \left (a,b\right ) $上一致连续.
+	\begin{enumerate}
+		\item 证明:函数$ f $在$ (a,b) $上有界;
+		\item 试问上述结论对无界区间是否成立?并说明理由.
+	\end{enumerate}
+\end{example}
+\begin{example}[陕西师范大学,2023]
+	已知$ f(x) $在$ (-\infty,+\infty) $上连续,且$ \lim\limits_{x\to -\infty}f(x) $和$ \lim\limits_{x\to +\infty}f(x) $都存在,证明:$ f(x) $在$ (-\infty,+\infty) $上一致连续.
+\end{example}
+\newpage
+\begin{thinking}[南开大学,2023]
+	设$ \alpha $为实数,记
+	\[ f(x)=
+	\begin{dcases}
+		x^{\alpha}\cos \dfrac{1}{x}, &x>0;\\
+		0, &x=0.
+	\end{dcases}
+\]
+已知$ f(x) $在$ \left [0,+\infty\right ) $上一致连续,求$ \alpha $的取值范围.
+\end{thinking}
+\begin{thinking}[中国矿业大学(徐州),2023]
+	设单调有界函数$ f(x) $在$ (a,b) $上连续,证明$ f(x) $在$ (a,b) $上一致连续.
+\end{thinking}
+\newpage
+\begin{example}[北京工业大学,2023;广西大学,2023]
+	证明:实直线$ \mathbb{R} $上的两个一致连续函数$ f(x) $和$ g(x) $的和函数$ f(x)+g(x) $一致连续;它们的乘积函数$ f(x)g(x) $是否仍一致连续?若是,请写出证明过程;若不是,请举出反例.
+\end{example}
+\begin{example}[哈尔滨工业大学,2023]
+	设$ f(x) $在$ (-\infty,+\infty) $上连续,$ g(x) $在$ (-\infty,+\infty) $上一致连续且有界,证明:$ f(g(x)) $在$ (-\infty,+\infty) $在一致连续.若去掉“$ g(x) $有界”,则$ f(g(x)) $是否一致连续?正确请给出证明,错误请给出反例.
+\end{example}
+\newpage
+\begin{thinking}[重庆大学,2023]
+	证明:函数$ f(x) $在有界区间$ I $上一致连续的充分必要条件是当$ \{a_n\} $是$ I $上的任意柯西函数,$ \{f(a_n)\} $也是柯西数列.
+\end{thinking}
+\newpage
+\begin{example}[华南理工大学,2023;西南大学,2023;北京邮电大学,2023]
+	已知$ f(x) $在$ (0,1] $上可导,且极限$ \lim\limits_{x\to 0^+} \sqrt{x}f^{\prime}(x)$存在.证明:$ f(x) $在$ (0,1]$上一致连续.
+\end{example}
+\begin{example}[大连理工大学,2023]
+	设$ f(x) $在$ [1,+\infty)$上连续可微,$\lvert f^{\prime}(x) \rvert \leq 1(x\geq 1) $,求证:$ \dfrac{f(x)}{x} $在$ [1,+\infty)$上一致连续.
+\end{example}
+\newpage
+\begin{thinking}[太原理工大学,2023]
+	设$ f(x) $在有限开区间$ (a,b) $上可导,且$ \lim\limits_{x\to a^+}f^{\prime}(x) $和$ \lim\lim\limits_{x\to b^-}f^{\prime}(x) $存在.证明:
+	\begin{enumerate}
+		\item  $ \lim\limits_{x\to a^+}f(x) $与$ \lim\limits_{x\to b^-}f(x) $都存在;
+		\item  $ f(x) $在$ (a,b) $上一致连续且有界.
+	\end{enumerate}
+\end{thinking}
+\begin{thinking}[吉林大学,2023]
+设$ f(x) $在$ [1,+\infty) $上有定义,且存在正的常数$ l,L $,对任意的$ x_1,x_2\in [1,+\infty)]$,都有
+\[
+l\lvert x_2-x_1\rvert\leq\lvert f(x_2)-f(x_1)\rvert\leq L\lvert x_2-x_1\rvert .
+\]
+证明:存在$ X\in[1,+\infty) $,使得$ \dfrac{x+e^{-x}}{f(x)} $在$ [X,+\infty)$上一致连续.
+\end{thinking}
+\newpage
+\begin{example}[中国科学技术大学,2023]
+	\begin{equation*}
+		f(x)=
+		\begin{cases}
+			x^2\left (\sin \frac1x\right )^2,&x\neq0;\\
+			0,&x=0.
+		\end{cases}
+	\end{equation*}
+计算$f$的导数$f^{\prime}$,并讨论$f^{\prime}$的连续性.
+\end{example}
+\begin{example}[北京科技大学,2023]
+	设函数$ f(x) $连续,且$ \lim\limits_{x\to 0}\dfrac{f(x)}{x}=1,g(x)=\int_{0}^{1}f(xt) \,\mathrm{d}t$,求$ g^{\prime}(x) $,并讨论$ g^{\prime}(x) $在$ x=0 $处是否连续.
+\end{example}
+\newpage
+\begin{thinking}[华东师范大学,2023]
+$y=y(x)$由参数方程
+	$\left\{\begin{lgathered}
+		x=\dfrac{t}{1+t^2};\\
+		y=\dfrac{t^2}{1+t^2}
+	\end{lgathered}\right.$
+确定,求$\dfrac{\mathrm{d}y}{\mathrm{d}x},\dfrac{\mathrm{d}^2y}{\mathrm{d}x^2}$.
+\end{thinking}
+\begin{thinking}[重庆大学,2023]
+	设$ f(x) $在$ (0,+\infty) $内有定义,且对任何$ x,y\in (0,+\infty) $,都有$ f(xy) =f(x)+f(y)$,若$ f^{\prime}(1) $存在,求$ f^{\prime}(x) $.
+\end{thinking}
+\newpage
+\begin{example}
+    123
+\end{example}
+\end{document}
