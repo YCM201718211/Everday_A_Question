@@ -1,0 +1,90 @@
+\usepackage{xeCJK}%设置全局字体
+\usepackage{fontspec}%设置英文字体(包括公式字体)
+\usepackage{amssymb}%\mathbb等公式字体命令
+\usepackage[tbtags]{amsmath}
+\usepackage[thmmarks,amsmath]{ntheorem}%证明过程环境
+\usepackage{mathtools}%multlined公式环境
+\usepackage{geometry}%页面边距
+\usepackage{fancyhdr}%自定义页眉页脚
+\usepackage{setspace}%定义行间距,不是段间距
+\usepackage[bookmarks=false]{hyperref}%超链接
+
+%\setCJKmainfont{SimSun}[BoldFont=SimHei, ItalicFont=KaiTi]
+\let\heiti\relax%清除旧定义
+\let\fangsong\relax
+\let\songti\relax
+\newCJKfontfamily{\heiti}[AutoFakeBold={3.17}]{SimHei}%重定义\heiti
+\newCJKfontfamily{\fangsong}[AutoFakeBold={3.17}]{FangSong}%重定义\fangsong
+\newCJKfontfamily{\songti}[AutoFakeBold={3.17}]{SimSun}%重定义\songti
+
+\renewcommand{\theequation}{%重新定义公式编号格式
+	\thesection.\arabic{equation}}
+\numberwithin{equation}{section}%每一节单独编号
+
+\geometry{screen}
+\hypersetup{%超链接格式
+	unicode=true,%在acrobat中pdf书签允许有latin符号(xelatex只允许true)
+	pdftoolbar=false,%acrobat工具栏
+	pdfmenubar=true,%acrobat菜单栏
+colorlinks=false,%不用彩色超链接
+%bookmarks=false,%不制作书签,放到宏包属性中
+%bookmarksopen=false,%书签不自动打开
+%bookmarksnumbered=false,%书签不标号
+pdfborder=000,%无超链接边框
+pdfpagemode=UseNone,%FullScreen全屏显示;UseThumbs显示缩略图;UseOutlines显示书签;UseOC显示图层;UseAttachments显示附件
+pdfstartview=Fit%适合页面
+}
+\geometry{a4paper,left=25mm,right=25mm,top=25mm,bottom=25mm}
+\setlength{\voffset}{-10mm}                        
+\setlength{\topmargin}{0mm}
+\setlength{\headheight}{5mm}
+\setlength{\headsep}{5mm}
+\setlength{\footskip}{7.5mm}
+
+\fancypagestyle{NoHeader}{%无页眉页面风格
+	\fancyhf{}%切换页面风格
+	\pagenumbering{arabic}%设置页码格式,阿拉伯数字标页
+\fancyhead[C]{}%中间页眉
+	\renewcommand{\headrulewidth}{0pt}%分隔线宽度0磅
+	\fancyfoot[C]{\zihao{-5}\setmainfont{Times New Roman}\thepage}%中间页脚
+	\renewcommand{\footrulewidth}{0pt}
+}
+
+{%定理类环境有编号风格
+	\theoremstyle{plain}
+	\theoremheaderfont{\bfseries}
+	\theorembodyfont{\normalfont}
+\newtheorem{definition}{\indent 定义}[section]
+\newtheorem{theorem}{\indent 定理}[section]%定理
+\newtheorem{proposition}[theorem]{\indent 命题}
+\newtheorem{lemma}[theorem]{\indent 引理} 
+\newtheorem{corollary}[theorem]{\indent 推论}
+\newtheorem{example}{\noindent 例题}
+\newtheorem{thinking}{\noindent 思考题}
+}
+{%注的环境配置
+	\theoremstyle{nonumberplain}
+	\theoremheaderfont{\bfseries}
+	\theorembodyfont{\normalfont}
+	\newtheorem{remark}{\indent 注:}
+}
+%\qedsymbol{\ensuremath{_\blacksquare}} %%在如无需证明的推论等定理类环境中使用 \qed 以显示证明结束符, 此处使用 \ensuremath{_\blacksquare} 而不是 $\square$ 以便在以数学环境结束的证明中也可以正常使用.
+\qedsymbol{\ensuremath{_\Box}}%空心方块
+{%证明过程环境配置
+\theoremstyle{nonumberplain}
+\theoremheaderfont{\bfseries}
+\theorembodyfont{\normalfont}
+%\theoremsymbol{\ensuremath{_\blacksquare}}%放进盒子的符号
+\theoremsymbol{\ensuremath{_\Box}}%放进盒子的空心方块
+\newtheorem{proof}{\indent 证明}
+}
+
+\renewcommand{\theenumi}{\arabic{enumi}}
+\renewcommand{\labelenumi}{(\theenumi)}%编号使用"(1)"格式
+
+\allowdisplaybreaks[2]%长公式断页
+%	\bibliographystyle{unsrt}%参考文献排版风格
+%\renewcommand{\baselinestretch}{1.5}%1.5倍行距
+\setlength{\lineskiplimit}{2.625bp}%五号字1/4高
+\setlength{\lineskip}{2.625bp}%避免两行过于紧凑
+\setlength{\parskip}{0pt}%段间距
